@@ -6,7 +6,7 @@ subtitle: 'Das Netz der Information<br><small>Lerninhalte</small>'
 date: 2025-12-08 
 date-modified: 2025-12-08
 author: Călin Aurel Drăgan
-abstract: 'Der Austausch von Information war die ursprüngliche Motivation für die Erfindung des World Wide Web. Die Webseite ist die bekannteste Form eines Dokuments zum Austausch von Information. Damit Du verstehst mit welcher Technologie dieser Informationsaustausch möglich wird, lernst Du in diesem Dokument die Grundlagen des WWW.'
+abstract: 'Der Austausch von Information war die ursprüngliche Motivation für die Erfindung des World Wide Web. Die Webseite ist die bekannteste Form eines Dokuments zum Austausch von Information. Damit Du verstehst mit welcher Technologie dieser Informationsaustausch möglich wird, lernst Du in diesem Dokument die Grundlagen des WWW kennen.'
 bibliography: ../../../../Scitech/references/calin.bib
 # csl: ../../../../Scitech/references/nature.csl
 format: 
