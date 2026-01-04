@@ -1,0 +1,150 @@
+{{< include _includes/_front_matter.qmd >}} 
+{{< include _includes/_init_fontawesome.qmd >}} 
+{{< include _includes/_katex_macros.qmd >}} 
+{{< include _includes/_r_themes.qmd >}}
+
+## Entstehung des WWW
+
+Der Physiker Tim Berners Lee erfand im Jahr 1989 am CERN[^1] eine formale Programmiersprache zur Erstellung von Dokumenten, die dem Informationsaustausch dienen. Diese Sprache heisst HTML[^2] und erlaubt die Erstellung von Hyperlinks, die Dokumente durch Links miteinander verbinden. Im Jahr 1990 entwickelte Tim dann den ersten Server und den ersten Browser, die 1993 der Welt zur Verfügung gestellt wurden. Er nutzte dabei das Internet für den Datenaustausch. Damit ist eines der größten Informationssysteme geschaffen worden: das **World Wide Web**.
+
+[^1]: *Conseil Européen pour la Recherche Nucléaire* ist der französische Name für eine europäische übernationale Organisation für Teilchenphysik. Sie wurde 1954 gegründet, beschäftigt etwa 2700 Personen, und empfängt mehr als 12000 Gäste jährlich. Ihre Hauptaufgabe ist die Bereitstellung von Teilchenbeschleuniger zur Erforschung der Materie, darunter des LHC oder *Large Hadron Collider*. Der LHC ist der größte Teilchenbeschleuniger der Welt und eine der größten Maschinen der Welt. Es hat einen Durchmesser von 8 km und einen Umfang von 27 km.
+
+[^2]: Die *Hypertext Markup Language* ist eine formale Programmiersprache mit deren Hilfe strukturierte Dokumente beschrieben werden. Du erfährst mehr darüber in den Lerninhalten zu HTML.
+
+::: {#fig-turing}
+![](images/tim_berners_lee.jpg){width="30%"}
+
+Tim Berners-Lee, oder Sir Timothy Berners-Lee, da er 2004 geadelt wurde, \* 1955, ist ein englischer Physiker, der 1989 das Internet mit Hypertext verband und somit das World Wide Web erfand [@summitEnglish12November2024].
+:::
+
+Es ist wichtig an dieser Stelle die Begriffe *Internet* und *WWW* auseinanderzuhalten. Das Internet besteht aus Computernetzwerken, die miteinander verbunden sind. Hier geht es um Hardware, die mittels Kabel oder optischen Medien Daten austauschen. Das WWW ist die globale Menge von Information die über das Internet zugänglich gemacht und ausgetauscht werden kann.
+
+## Web Ressourcen
+
+Am Anfang des WWW am CERN waren Ressourcen Dokumente; das sind Informationen, die eine Struktur haben: Titel, Überschriften, Tabellen, und andere Elemente. Danach wurden Dateien auch zu Ressourcen und damit ging der Austausch von vielen anderen Formaten los. Mit der Zunahme der Bandbreite kam auch der direkte Zugriff auf Audio und Video dazu; also Streams, die heutzutage durch Musik- und Videostreaming Plattformen verfügbar gemacht werden.
+
+Eine Web Ressource kann eine Dokument, eine Audiodatei, eine Videodatei, und viele andere digitale Objekte, zum Beispiel Dienstleistungen. Diese werden **Web Ressourcen** genannt. Jede Ressource ist ein im WWW identifizierbares und benanntes *Ding*.
+
+## URI, URN, URN
+
+Alle Web Ressourcen werden durch einen Webserver im WWW zur Verfügung gestellt. Zur Verfügung stellen heisst, dass die Ressource durch eine **Uniform Ressource Identifier**, **URI**, eindeutig benannt und identifiziert wird. Ein Webbrowser stellt Anfragen an einem Webserver unter Verwendung einer URI. Eine URI ist eine Zeichenkette, dessen Struktur aus folgenden Elementen aufgebaut ist:
+
+-   Scheme (deu. Schema): Kontext, in dem sich der Nutzer bewegt gefolgt von `:`
+-   Authority (deu. eher Zuständigkeit) nach `//` folgend und enthaltend:
+    -   Benutzerinformation: ist optional und ist von einem `@` Zeichen gefolgt
+    -   Host (deu. Gastgeber aber eher der die Web Ressource zur Verfügung Stellende): kann ein registrierter Host oder eine IP[^3] Adresse sein.
+    -   Port (deu. Kanal): teilt die Anwendung mit, für die der Inhalt bestimmt ist. Der Port ist optional.
+-   Path (deu. Pfad): Zeigt an, wo die Web Ressource zu finden ist; fängt immer mit einem `/` Zeichen an, wenn eine Authority gegeben ist. Falls keine gegeben ist, darf der Pfad nicht mit einem `//` Anfangen.
+-   Query (deu. Abfrage): zur Identifizierung von Ressourcen, die nicht allein durch den Pfad gefunden werden können; fängt immer mit einem `?` Zeichen an.
+-   Fragment: eine optionale Angabe einer Stelle innerhalb der Ressource. Das Fragment fängt immer mit einem `#`Zeichen an.
+
+[^3]: Das *Internet protocol* ist die Kommunikationsebene des Internets, die direkt über der Hardwareebene liegt. Das IP sorgt für die Verteilung der Pakete von Sender zu Empfänger.
+
+Eine **Uniform Ressource Locator**, **URL**, benutzt, die eine Untermenge der URI Zeichenketten stellt. Eine URL hat die Aufgabe eine Ressource zu identifizieren. Dabei ist die URL eine URI, die die Ressource durch die Art des Zugangs zu der Ressource. Eine URL brauchst einen Host, einen Pfad, und, optional, Benutzerinformationen oder
+
+Eine **Uniform Ressource Name**, **URN**, ist eine URI, die eine Ressource benennt. Dabei sagt die URN nichts über den Ort oder die Zugangsart der Ressource aus. Das heisst, eine URN enthält keinen Pfad und keine Query.
+
+## Client-Server Architektur
+
+Das WWW funktioniert nach einem Client-Server Modell. Dabei sind die Clients und die Server mithilfe des Internets miteinander verbunden. Clients (deu. Kunden, aber hier eher als Bezieher) richten Anfragen an Server, die dann beantwortet werden. Die Anfragen und Antworten müssen so beschaffen sein, dass beide Seiten sie verstehen. Es muss also eine gemeinsame Sprache und einheitliche Regeln geben; das nennt man dann ein Protokoll, genauer, ein Kommunikationsprotokoll.
+
+### Clients
+
+Clients sind zum Beispiel alle Browser, die Du als Zugang zum WWW verwendest. In diesem Moment benutzt Du den Safari Browser auf Deinem iPad. Der Safari Browser tritt nun als Client in Erscheinung und richtet Anfragen an GitHub. Diese Anfragen werden von einem GitHub Server beantwortet, der dieses Dokument zur Verfügung stellt.
+
+::: {#fig-server layout-ncol="2"}
+![](images/first-server-cern-computer-center.jpg){width="50%"}
+
+![](images/kevin-ache-2JJ3wBHu4_0-unsplash.jpg){width="50%"}
+
+Links: Der erste Server der Welt der von Tim Berners-Lee am CERN entwickelt worden ist [@filutowskaEnglishFirstWeb2009]. Beachte den handgeschriebenen Hinweis: "This machine is a server. DO NOT POWER DOWN!!". Beachte auch, dass der Rechner von der Firma "NEXT" stammt. Die Firma NEXT wurde von Steve Jobs, einem der Gründer von Apple gegründet und anschliessend von Apple aufgekauft. Daraufhin kehrte Steve zu Apple zurück und trieb die Entwicklung von iPod, iPhone, und iPad an. Rechts: ein Serverraum mit 19 Zoll Schränken, in denen etliche Server, Switche, Netzteilversorgungen, und andere Komponenten untergebracht sind [@unsplashPhotoKevinAche2023]. Diese sogenannten 19 Zoll Racks befinden sich normalerweise in einem klimatisierten Raum.
+:::
+
+### Server
+
+Auf der Serverseite dienten zuerst einfache Rechner, oftmals nur ein einzelner wie in @fig-server gezeigt. Schon bald wurden die Serverrechner jedoch spezialisiert. Sie brauchen oft kein Bildschirm und müssen extrem zuverlässig laufen. Die Zuverlässigkeit ist einer der Gründe warum Linux Systeme heute den Markt der Serverbetriebssysteme beherrschen [@ServerOperatingSystem]. In den Achtziger und Neunziger des letzten Jahrhunderts entstanden so Rechenzentren, die eine große Anzahl von Servern beherbergten. 
+
+Der heutige Trend umfasst die sogenannte Virtualisierung von Servern. Ein Bereich tangiert die große Musik und Video Streamingdienste, die schon lange nicht mehr mit einem einzigen Rechenzentrum auskommen. Die Anfrage der Clients wird nunmehr auf viele Rechenzentren verteilt. Zum Beispiel kann die Web Ressource Videostream dabei von verschiedenen Rechenzentren auf der ganzen Welt bedient werden. Ein anderer Aspekt der Virtualisierung ist das **Cloud Computing**. Kleinere Organisationen können oder wollen sich oft die Kosten der Anschaffung, Pflege, Sicherheit, usw. von Servern nicht mehr leisten. Eine Möglichkeit zur Kostenersparnis kann durch das Mieten eines virtuellen Servers erfolgen. Dieser muss noch nicht mal mehr physisch existieren, sondern als Software in mehreren Rechenzentren parallel laufen.    
+
+## Kommunikation im WWW
+
+Die Kommunikation im WWW erfolgt über das Internet. Dabei werden eine Reihe von Technologie benutzt, deren Bedeutung Du wissen solltest. Das Kommunikationsmodell im vernetzten Computersystemen entspricht einer Zwiebel. An der Oberfläche befinden sich die Anwendungsprotokolle und mit jeder Schicht nach Innen näherst Du Dich der eigentlichen Technik, die das Internet möglich macht. Wir fangen nun an der Oberfläche an und arbeiten uns nach innen. 
+
+- Anwendungsebene:
+    + **Hypertext Transfer Protocol**, **HTTP**: Dieses Protokoll und seine verschlüsselte Variante **HTTPS** sind die Protokolle, die das WWW ausmacht. Es ist ein Anfrage-Antwort System, das für den Betrieb in einer Client-Server Architektur gedacht ist. Hiermit werden alle Webseiten übertragen.
+    + **Domain Name System**, **DNS**: Dies ist ein Dienst, der im Netzwerken verschiedene Bereiche, Computer, und Ressourcen identifiziert. Durch DNS kannst Du zum Beispiel Klarnamen statt IP Adressen verwenden. 
+- Transportebene: 
+    + **Transmission Control Protocol**, **TCP**: Überträgt einen geordneten, fehlergeprüften Strom von Bytes durch eine Verbindung. Eine Verbindung wird zwischen einem Sender und einem Empfänger etabliert.  
+    + **User Datagram Protocol**, **UDP**: Überträgt fehlergeprüfte Datenpakete, allerdings in einer verbindungslosen Weise in einem Netzwerk hinein. Das heisst, es gibt keine Garantie, dass Pakete ankommen oder empfangen werden aber es muss auch keine Verbindung zwischen Sender und Empfänger erfolgen.
+    + **QUIC**: Übeträgt Daten mithilfe des UDP Protokolls aber im Unterschied zu TCP auf eine Multiplex Art und Weise.  
+- Internetebene: 
+    + **Internet Protocol**, **IP**: Verantwortlich für die Übertragung von Datenpaketen zwischen Senderhost- und Empfängerhostcomputer mithilfe von IP Adressen. Dieses protokoll ist das älteste und etabliert das Internet.
+- Linkebene: Layer 2 Protokolle sind spezielle Protokolle, die über Verbindungen Daten austauschen. Diese Ebene wird zum Beispiel von Switchen benutzt. Das sind Datenweichen für das Internet.
+
+Wir haben gesagt, dass die für das WWW zuständigen Kommunikationsprotokolle wie in einer Zwiebel angeordnet sind. Dies gilt übrigens für sehr viele andere Kommunikationsprotokolle im Internet. Dieser schichtweise Aufbau spiegelt sich in der Anatomie der übertragenen Daten. Jedes Protokoll trägt das nächste Protokoll huckepack. Somit wird die Verantwortlichkeit ebenfalls geteilt.
+
+::: {#fig-protocols layout-ncol="2" layout-valign="center"}
+![](images/ip_stack_connections.png){width="50%"}
+
+![](images/udp_encapsulation.png){width="50%"}
+
+Links: Funktionsweise des WWW über das Internet [@en:user:kbroseEnglishOperationInternet2008]. Ein Computer A möchte mit einem Computer B Daten innerhalb einer Anwendung austauschen. Zum Beispiel möchtest Du ein TikTok Video anschauen. Der Client A sendet an einer Bereitstellungsanwendung, die auf einem TikTok Server B läuft, eine Anfrage nach einem bestimmten Video. Das geschieht über HTTP. Die Anfrage wird auf der Transportebene in QUIC/UDP verpackt, dann auf der Internetebene in das IP Protokoll, um anschliessend auf der Linkebene von einem Layer 2 Protokoll. So wird die Anfrage auf dem Weg geschickt und über verschiedene Medien. Dazwischen liegende Knoten müssen nur bis auf die Internetebene dekodieren, damit sie die Anfrage weitersenden. Die Verschachtlung der Daten ist rechts gezeigt [@en:user:kbroseEnglishEncapsulationApplication2008].    
+:::
+
+### DNS
+
+Das **Domain Name System** vergibt hierarchische Namen für Web Ressourcen. Die Hierarchie der Namen wird von rechts nach links gelesen. Der Sinn ist, dass Du im Client, zum Beispieleinem Browser, sogenannte Klarnamen verwenden kannst, statt IP Adressen. 
+
+Der Name `www.beispiel.com` hat somit drei Ebenen, die durch einen `.` getrennt sind. Die höchste Ebene ist `com`, gefolgt von `beispiel`, schliesslich gefolgt von `www`. Das Wort `beispiel` ist der sogenannte Domänenname. Wenn der Name mit einer IP Adresse verbunden wird, dann ist der Name gleichzeitig der Hostcomputername.
+
+Domänennamen werden durch Registrare in einer weltweit verteilten Datenbank eingetragen. Dieser Vorgang wird von privatwirtschaftlichen Firmen ausgeführt; somit müssen deren Dienste bezahlt werden. Das Registrieren einer Domäne kostet auch monatlichen Unterhalt im Bereich einiger bis mehrere Zehner Euro im Monat. 
+
+## Suchmaschinen
+
+Eine Suchmaschine liefert Hyperlinks zu relevanten Webseiten als Antwort auf eine Suchanfrage eines Clients. Dazu muss die Suchmaschine Teil eines verteilten Rechnersystems sein, damit Ergebnisse schnell und zuverlässig an jedem potenziellen Client auf der Welt ankommen. Der Marktanteil an der globalen Suche teilen sich folgende Suchmaschinen:
+
+#. Google (Alphabet Konzern): 89–90 %
+#. Bing (Microsoft Konzern): ca. 4 %
+#. Yandex (russische Firma): ca. 2.5 %
+#. Yahoo! (ehemals führend, absolut führend 1998): ca. 1.3 %
+#. DuckDuckGo (mit erhöhtem Privatsphärenschutz): ca. 0.8 %
+#. Baidu (in China hauptsächlich): ca. 0.7 % 
+
+### Beschaffung von Daten
+
+Die Daten zur Generierung von Suchergebnissen werden von dem Suchmaschinenentwickler durch den Einsatz von Webcrawler, auch Spider oder Roboter genannt, generiert. Diese Roboter durchforsten das WWW und gehen systematisch allen Hyperlinks nach. Alle diese Daten werden gespeichert.
+
+Der nächste Schritt umfasst die Kategorisierung der Daten durch komplizierte Algorithmen. Diesen Vorgang nennen wir Indexierung. Ein weiterer Schritt verwendet die auf einer Webseite vorhandenen Hyperlinks, um eine Reihenfolge von Ergebnissen zu erzeugen. Die Reihenfolge sollte letztendlich eine Mischung aus Popularität und Relevanz der Seite darstellen.
+
+Diese Datengrundlage stellt bei vielen Unternehmen, die eine Suchmaschine betreiben oftmals eine Eintrittstor in das maschinelle Lernen dar. Eine Weiterentwicklung des maschinellen Lernens ist das, was heute als moderne künstliche Intelligenz hyped.
+
+### Erzeugung von Suchergebnissen
+
+Wenn Du in irgendeiner Suchmaschine nach relevanten Informationen im WWW suchst, dann suchst Du eigentlich durch den Indexdschungel, den die Suchmaschinenentwickler angelegt haben; nicht das WWW an sich. Da die Algorithmen zur Indexierung und Relevanzfeststellung teilweise unbekannt sind, sind die Suchergebnisse von verschiedenen Suchmaschinen unterschiedlich.
+
+Die Qualität der Suchergebnisse ist höchst subjektive; das heisst, sie hängt von Seinem persönlichen Einstellungen und Erwartungen ab. Bei manchen Suchmaschinen kommt es immer häufiger vor, dass Suchergebnisse selbst bei derselben Person abweichen. Das hat Vor- und Nachteile.
+
+In den letzten Jahren haben sich zusätzliche Algorithmen verbreitet, die die Suchergebnisse von Deinem Standort, Deinem Alter, der Tageszeit, und vielen anderen Deiner persönlichen Daten abhängig machen. zusätzlich sind die Algorithmen bemüht, Dir Suchergebnisse aufgrund Deiner Suchhistorie; also Deiner Suchgeschichte und Deines Verhaltens im WWW, zu präsentieren.  
+
+## Deep Web 
+
+Das Deep Web ist derjenige Teil des WWW, der nicht durch irgendeinem Webcrawler kartografiert und indiziert worden ist. Dadurch taucht dieser Teil des WWW nie in Suchergebnissen auf. Der Zugang zum Deep Web bleibt dem Webcrawler aufgrund folgender Aspekte verwehrt:
+
+- Kontext: zum Beispiel aufgrund des geugraphischen Stanbdortes des Client
+- Dynamischer Inhalt: dynamische Webseiten werden von Servern aufgrund einer spezifischen Anfrage hergestellt
+- Zugangslimitierung
+    + Durch **Robots Exclusion Standard** oder **CAPTCHA**s
+    + Privates Web: geschützt durch Zugangsdaten
+    + Verschlüsselter Inhalt: zugänglich nur mit Spezialsoftware
+- Nicht-HTML/text Inhalt: Text kodiert in anderen Multimediadateien, zum Beispiel bild oder Video
+- Gescripteter Inhalt: zum Beispiel generiert durch Javascript
+- Inhalt ohne Aussenlinks
+- Web Archive: Webseiten, die nicht mehr zugänglich sind, deren Inhalt jedoch ein einem Archiv gespeichert worden ist
+
+## Dark Web
+
+Das Dark Web ist der Teil des Internets, der durch spezielle und angepasste Kommunikationsprotokolle zugänglich wird. Das Dark Web läuft auf dem Internet, spricht aber nur teilweise dieselbe Kommunikationssprache. **Das Dark Web ist nicht gleich dem Deep Web**.
+
+Im Dark Web können Marktplätze für illegale Güter wie Drogen und Waffen entstehen. Transaktionen werden dann meist in ungeregelten Währungen wie Bitcoin getätigt. Weiterhin gibt es Peer-to-Peer Dateiübetragungen; meist illegaler pornografischer Art. In Dark Web Foren werden extremistische meinung verbreitet. 
+
+Allerdings gibt die Anonymität auch berechtigten Anwendungen einen Platz. Whistleblower können ohne Defamierung und Verfolgung sensitive Daten tauschen. Pressearbeit greift oft auf Dark Wevb Dienste zurück, um Quellen zu schützen oder einen Publikationsvorteil zu erlangen. Einige Social Media Seiten nutzen das Dark Web auch zur Datenübertragung; so können die Mitglieder vor unerlaubten Zugriff geschützt werden. 

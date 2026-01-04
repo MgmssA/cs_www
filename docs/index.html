@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.19">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Călin Aurel Drăgan">
+
+<title>quarto-input5b2fdd801e7d2360</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="index_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="index_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="index_files/libs/quarto-html/anchor.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-46eeb4c476de49ef7df495821a6125d9.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-dark-2e0ab3ffcb189ca14a0af92b40aeab37.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-46eeb4c476de49ef7df495821a6125d9.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="index_files/libs/bootstrap/bootstrap-3425cfae6db2005cddf489447706abcd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="index_files/libs/bootstrap/bootstrap-dark-3425cfae6db2005cddf489447706abcd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="index_files/libs/bootstrap/bootstrap-3425cfae6db2005cddf489447706abcd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="index_files/libs/quarto-contrib/line-highlight-1.0.0/line-highlight.css" rel="stylesheet">
+<script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.23/dist/contrib/mhchem.min.js" integrity="sha384-F2ptQFZqNJuqfGGl28mIXyQ5kXH48spn7rcoS0Y9psqIKAcZPLd1NzwFlm/bl1mH" crossorigin="anonymous"></script>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="style/_style.css">
+</head>
+
+<body class="quarto-light">
+
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title"><p>
+<img src="style/mgmss_symbol_color.png" class="img-fluid" width="40">
+</p>
+<p>WWW</p></h1>
+            <p class="subtitle lead">Das Netz der Information<br><small>Lerninhalte</small></p>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Autor:in</div>
+      <div class="quarto-title-meta-contents">
+               <p>Călin Aurel Drăgan </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Veröffentlichungsdatum</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">8. Dezember 2025</p>
+      </div>
+    </div>
+    
+      <div>
+      <div class="quarto-title-meta-heading">Geändert</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date-modified">8. Dezember 2025</p>
+      </div>
+    </div>
+      
+    </div>
+    
+  <div>
+    <div class="abstract">
+      <div class="block-title">Zusammenfassung</div>
+      Der Austausch von Information war die ursprüngliche Motivation für die Erfindung des World Wide Web. Die Webseite ist die bekannteste Form eines Dokuments zum Austausch von Information. Damit Du verstehst mit welcher Technologie dieser Informationsaustausch möglich wird, lernst Du in diesem Dokument die Grundlagen des WWW.
+    </div>
+  </div>
+  
+  </header><div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+    <h2 id="toc-title">Inhaltsverzeichnis</h2>
+   
+  <ul>
+  <li><a href="#entstehung-des-www" id="toc-entstehung-des-www" class="nav-link active" data-scroll-target="#entstehung-des-www"><span class="header-section-number">1</span> Entstehung des WWW</a></li>
+  <li><a href="#web-ressourcen" id="toc-web-ressourcen" class="nav-link" data-scroll-target="#web-ressourcen"><span class="header-section-number">2</span> Web Ressourcen</a></li>
+  <li><a href="#uri-urn-urn" id="toc-uri-urn-urn" class="nav-link" data-scroll-target="#uri-urn-urn"><span class="header-section-number">3</span> URI, URN, URN</a></li>
+  <li><a href="#client-server-architektur" id="toc-client-server-architektur" class="nav-link" data-scroll-target="#client-server-architektur"><span class="header-section-number">4</span> Client-Server Architektur</a>
+  <ul>
+  <li><a href="#clients" id="toc-clients" class="nav-link" data-scroll-target="#clients"><span class="header-section-number">4.1</span> Clients</a></li>
+  <li><a href="#server" id="toc-server" class="nav-link" data-scroll-target="#server"><span class="header-section-number">4.2</span> Server</a></li>
+  </ul></li>
+  <li><a href="#kommunikation-im-www" id="toc-kommunikation-im-www" class="nav-link" data-scroll-target="#kommunikation-im-www"><span class="header-section-number">5</span> Kommunikation im WWW</a>
+  <ul>
+  <li><a href="#dns" id="toc-dns" class="nav-link" data-scroll-target="#dns"><span class="header-section-number">5.1</span> DNS</a></li>
+  </ul></li>
+  <li><a href="#suchmaschinen" id="toc-suchmaschinen" class="nav-link" data-scroll-target="#suchmaschinen"><span class="header-section-number">6</span> Suchmaschinen</a>
+  <ul>
+  <li><a href="#beschaffung-von-daten" id="toc-beschaffung-von-daten" class="nav-link" data-scroll-target="#beschaffung-von-daten"><span class="header-section-number">6.1</span> Beschaffung von Daten</a></li>
+  <li><a href="#erzeugung-von-suchergebnissen" id="toc-erzeugung-von-suchergebnissen" class="nav-link" data-scroll-target="#erzeugung-von-suchergebnissen"><span class="header-section-number">6.2</span> Erzeugung von Suchergebnissen</a></li>
+  </ul></li>
+  <li><a href="#deep-web" id="toc-deep-web" class="nav-link" data-scroll-target="#deep-web"><span class="header-section-number">7</span> Deep Web</a></li>
+  <li><a href="#dark-web" id="toc-dark-web" class="nav-link" data-scroll-target="#dark-web"><span class="header-section-number">8</span> Dark Web</a></li>
+  </ul>
+</nav>
+</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<!-- Initialize Fontawesome with any icon {{< fa thumbs-up >}} -->
+<div class="hidden">
+<!-- Groundwork -->
+<p><span class="math display">
+\gdef\sub#1{_{\mathrm{#1}}}
+\gdef\unit#1{\mathrm{#1}}
+</span> <!-- Physical units --> <span class="math display">
+\gdef\celsius{\unit{°C}}
+\gdef\joule{\unit{J}}
+\gdef\kelvin{\unit{K}}
+\gdef\kilogram{\unit{kg}}
+\gdef\liter{\unit{L}}
+\gdef\milliliter{\unit{mL}}
+\gdef\meter{\unit{m}}
+\gdef\mole{\unit{mol}}
+\gdef\newton{\unit{N}}
+\gdef\pascal{\unit{Pa}}
+</span> <!-- Exponentiated units --> <span class="math display">
+\gdef\squaremeter{\meter^2}
+\gdef\cubicmeter{\meter^3}
+</span> <!-- Combined physical units --> <span class="math display">
+\gdef\newtonperkilogram{\frac{\newton}{\kilogram}}
+\gdef\joulepermole{\frac{\joule}{\mole}}
+\gdef\jouleperkilogram{\frac{\joule}{\kilogram}}
+\gdef\jouleperkelvin{\frac{\joule}{\kelvin}}
+\gdef\jouleperkilogramperkelvin{\frac{\joule}{\kilogram\,\kelvin}}
+\gdef\joulepermoleperkelvin{\frac{\joule}{\mole\,\kelvin}}
+</span></p>
+</div>
+<div class="hidden">
+
+</div>
+<section id="entstehung-des-www" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="entstehung-des-www"><span class="header-section-number">1</span> Entstehung des WWW</h2>
+<p>Der Physiker Tim Berners Lee erfand im Jahr 1989 am CERN<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> eine formale Programmiersprache zur Erstellung von Dokumenten, die dem Informationsaustausch dienen. Diese Sprache heisst HTML<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> und erlaubt die Erstellung von Hyperlinks, die Dokumente durch Links miteinander verbinden. Im Jahr 1990 entwickelte Tim dann den ersten Server und den ersten Browser, die 1993 der Welt zur Verfügung gestellt wurden. Er nutzte dabei das Internet für den Datenaustausch. Damit ist eines der größten Informationssysteme geschaffen worden: das <strong>World Wide Web</strong>.</p>
+<div id="fig-turing" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-turing-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/tim_berners_lee.jpg" class="img-fluid figure-img" style="width:30.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-turing-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Abbildung&nbsp;1: Tim Berners-Lee, oder Sir Timothy Berners-Lee, da er 2004 geadelt wurde, * 1955, ist ein englischer Physiker, der 1989 das Internet mit Hypertext verband und somit das World Wide Web erfand <span class="citation" data-cites="summitEnglish12November2024">(<a href="#ref-summitEnglish12November2024" role="doc-biblioref">Summit 12 November 2024, 16:48:08</a>)</span>.
+</figcaption>
+</figure>
+</div>
+<p>Es ist wichtig an dieser Stelle die Begriffe <em>Internet</em> und <em>WWW</em> auseinanderzuhalten. Das Internet besteht aus Computernetzwerken, die miteinander verbunden sind. Hier geht es um Hardware, die mittels Kabel oder optischen Medien Daten austauschen. Das WWW ist die globale Menge von Information die über das Internet zugänglich gemacht und ausgetauscht werden kann.</p>
+</section>
+<section id="web-ressourcen" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="web-ressourcen"><span class="header-section-number">2</span> Web Ressourcen</h2>
+<p>Am Anfang des WWW am CERN waren Ressourcen Dokumente; das sind Informationen, die eine Struktur haben: Titel, Überschriften, Tabellen, und andere Elemente. Danach wurden Dateien auch zu Ressourcen und damit ging der Austausch von vielen anderen Formaten los. Mit der Zunahme der Bandbreite kam auch der direkte Zugriff auf Audio und Video dazu; also Streams, die heutzutage durch Musik- und Videostreaming Plattformen verfügbar gemacht werden.</p>
+<p>Eine Web Ressource kann eine Dokument, eine Audiodatei, eine Videodatei, und viele andere digitale Objekte, zum Beispiel Dienstleistungen. Diese werden <strong>Web Ressourcen</strong> genannt. Jede Ressource ist ein im WWW identifizierbares und benanntes <em>Ding</em>.</p>
+</section>
+<section id="uri-urn-urn" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="uri-urn-urn"><span class="header-section-number">3</span> URI, URN, URN</h2>
+<p>Alle Web Ressourcen werden durch einen Webserver im WWW zur Verfügung gestellt. Zur Verfügung stellen heisst, dass die Ressource durch eine <strong>Uniform Ressource Identifier</strong>, <strong>URI</strong>, eindeutig benannt und identifiziert wird. Ein Webbrowser stellt Anfragen an einem Webserver unter Verwendung einer URI. Eine URI ist eine Zeichenkette, dessen Struktur aus folgenden Elementen aufgebaut ist:</p>
+<ul>
+<li>Scheme (deu. Schema): Kontext, in dem sich der Nutzer bewegt gefolgt von <code>:</code></li>
+<li>Authority (deu. eher Zuständigkeit) nach <code>//</code> folgend und enthaltend:
+<ul>
+<li>Benutzerinformation: ist optional und ist von einem <code>@</code> Zeichen gefolgt</li>
+<li>Host (deu. Gastgeber aber eher der die Web Ressource zur Verfügung Stellende): kann ein registrierter Host oder eine IP<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> Adresse sein.</li>
+<li>Port (deu. Kanal): teilt die Anwendung mit, für die der Inhalt bestimmt ist. Der Port ist optional.</li>
+</ul></li>
+<li>Path (deu. Pfad): Zeigt an, wo die Web Ressource zu finden ist; fängt immer mit einem <code>/</code> Zeichen an, wenn eine Authority gegeben ist. Falls keine gegeben ist, darf der Pfad nicht mit einem <code>//</code> Anfangen.</li>
+<li>Query (deu. Abfrage): zur Identifizierung von Ressourcen, die nicht allein durch den Pfad gefunden werden können; fängt immer mit einem <code>?</code> Zeichen an.</li>
+<li>Fragment: eine optionale Angabe einer Stelle innerhalb der Ressource. Das Fragment fängt immer mit einem <code>#</code>Zeichen an.</li>
+</ul>
+<p>Eine <strong>Uniform Ressource Locator</strong>, <strong>URL</strong>, benutzt, die eine Untermenge der URI Zeichenketten stellt. Eine URL hat die Aufgabe eine Ressource zu identifizieren. Dabei ist die URL eine URI, die die Ressource durch die Art des Zugangs zu der Ressource. Eine URL brauchst einen Host, einen Pfad, und, optional, Benutzerinformationen oder</p>
+<p>Eine <strong>Uniform Ressource Name</strong>, <strong>URN</strong>, ist eine URI, die eine Ressource benennt. Dabei sagt die URN nichts über den Ort oder die Zugangsart der Ressource aus. Das heisst, eine URN enthält keinen Pfad und keine Query.</p>
+</section>
+<section id="client-server-architektur" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="client-server-architektur"><span class="header-section-number">4</span> Client-Server Architektur</h2>
+<p>Das WWW funktioniert nach einem Client-Server Modell. Dabei sind die Clients und die Server mithilfe des Internets miteinander verbunden. Clients (deu. Kunden, aber hier eher als Bezieher) richten Anfragen an Server, die dann beantwortet werden. Die Anfragen und Antworten müssen so beschaffen sein, dass beide Seiten sie verstehen. Es muss also eine gemeinsame Sprache und einheitliche Regeln geben; das nennt man dann ein Protokoll, genauer, ein Kommunikationsprotokoll.</p>
+<section id="clients" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="clients"><span class="header-section-number">4.1</span> Clients</h3>
+<p>Clients sind zum Beispiel alle Browser, die Du als Zugang zum WWW verwendest. In diesem Moment benutzt Du den Safari Browser auf Deinem iPad. Der Safari Browser tritt nun als Client in Erscheinung und richtet Anfragen an GitHub. Diese Anfragen werden von einem GitHub Server beantwortet, der dieses Dokument zur Verfügung stellt.</p>
+<div id="fig-server" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-server-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/first-server-cern-computer-center.jpg" class="img-fluid figure-img"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/kevin-ache-2JJ3wBHu4_0-unsplash.jpg" class="img-fluid figure-img"></p>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-server-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Abbildung&nbsp;2: Links: Der erste Server der Welt der von Tim Berners-Lee am CERN entwickelt worden ist <span class="citation" data-cites="filutowskaEnglishFirstWeb2009">(<a href="#ref-filutowskaEnglishFirstWeb2009" role="doc-biblioref">Filutowska 27 May 2009, 12:56:55</a>)</span>. Beachte den handgeschriebenen Hinweis: “This machine is a server. DO NOT POWER DOWN!!”. Beachte auch, dass der Rechner von der Firma “NEXT” stammt. Die Firma NEXT wurde von Steve Jobs, einem der Gründer von Apple gegründet und anschliessend von Apple aufgekauft. Daraufhin kehrte Steve zu Apple zurück und trieb die Entwicklung von iPod, iPhone, und iPad an. Rechts: ein Serverraum mit 19 Zoll Schränken, in denen etliche Server, Switche, Netzteilversorgungen, und andere Komponenten untergebracht sind <span class="citation" data-cites="unsplashPhotoKevinAche2023">(<a href="#ref-unsplashPhotoKevinAche2023" role="doc-biblioref">Unsplash 2023</a>)</span>. Diese sogenannten 19 Zoll Racks befinden sich normalerweise in einem klimatisierten Raum.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="server" class="level3" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="server"><span class="header-section-number">4.2</span> Server</h3>
+<p>Auf der Serverseite dienten zuerst einfache Rechner, oftmals nur ein einzelner wie in <a href="#fig-server" class="quarto-xref">Abbildung&nbsp;2</a> gezeigt. Schon bald wurden die Serverrechner jedoch spezialisiert. Sie brauchen oft kein Bildschirm und müssen extrem zuverlässig laufen. Die Zuverlässigkeit ist einer der Gründe warum Linux Systeme heute den Markt der Serverbetriebssysteme beherrschen <span class="citation" data-cites="ServerOperatingSystem">(<a href="#ref-ServerOperatingSystem" role="doc-biblioref"><span>„Server <span>Operating System Market Volume</span>, <span>Share</span> | <span>Analysis</span>, 2032“</span> o.&nbsp;J.</a>)</span>. In den Achtziger und Neunziger des letzten Jahrhunderts entstanden so Rechenzentren, die eine große Anzahl von Servern beherbergten.</p>
+<p>Der heutige Trend umfasst die sogenannte Virtualisierung von Servern. Ein Bereich tangiert die große Musik und Video Streamingdienste, die schon lange nicht mehr mit einem einzigen Rechenzentrum auskommen. Die Anfrage der Clients wird nunmehr auf viele Rechenzentren verteilt. Zum Beispiel kann die Web Ressource Videostream dabei von verschiedenen Rechenzentren auf der ganzen Welt bedient werden. Ein anderer Aspekt der Virtualisierung ist das <strong>Cloud Computing</strong>. Kleinere Organisationen können oder wollen sich oft die Kosten der Anschaffung, Pflege, Sicherheit, usw. von Servern nicht mehr leisten. Eine Möglichkeit zur Kostenersparnis kann durch das Mieten eines virtuellen Servers erfolgen. Dieser muss noch nicht mal mehr physisch existieren, sondern als Software in mehreren Rechenzentren parallel laufen.</p>
+</section>
+</section>
+<section id="kommunikation-im-www" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="kommunikation-im-www"><span class="header-section-number">5</span> Kommunikation im WWW</h2>
+<p>Die Kommunikation im WWW erfolgt über das Internet. Dabei werden eine Reihe von Technologie benutzt, deren Bedeutung Du wissen solltest. Das Kommunikationsmodell im vernetzten Computersystemen entspricht einer Zwiebel. An der Oberfläche befinden sich die Anwendungsprotokolle und mit jeder Schicht nach Innen näherst Du Dich der eigentlichen Technik, die das Internet möglich macht. Wir fangen nun an der Oberfläche an und arbeiten uns nach innen.</p>
+<ul>
+<li>Anwendungsebene:
+<ul>
+<li><strong>Hypertext Transfer Protocol</strong>, <strong>HTTP</strong>: Dieses Protokoll und seine verschlüsselte Variante <strong>HTTPS</strong> sind die Protokolle, die das WWW ausmacht. Es ist ein Anfrage-Antwort System, das für den Betrieb in einer Client-Server Architektur gedacht ist. Hiermit werden alle Webseiten übertragen.</li>
+<li><strong>Domain Name System</strong>, <strong>DNS</strong>: Dies ist ein Dienst, der im Netzwerken verschiedene Bereiche, Computer, und Ressourcen identifiziert. Durch DNS kannst Du zum Beispiel Klarnamen statt IP Adressen verwenden.</li>
+</ul></li>
+<li>Transportebene:
+<ul>
+<li><strong>Transmission Control Protocol</strong>, <strong>TCP</strong>: Überträgt einen geordneten, fehlergeprüften Strom von Bytes durch eine Verbindung. Eine Verbindung wird zwischen einem Sender und einem Empfänger etabliert.<br>
+</li>
+<li><strong>User Datagram Protocol</strong>, <strong>UDP</strong>: Überträgt fehlergeprüfte Datenpakete, allerdings in einer verbindungslosen Weise in einem Netzwerk hinein. Das heisst, es gibt keine Garantie, dass Pakete ankommen oder empfangen werden aber es muss auch keine Verbindung zwischen Sender und Empfänger erfolgen.</li>
+<li><strong>QUIC</strong>: Übeträgt Daten mithilfe des UDP Protokolls aber im Unterschied zu TCP auf eine Multiplex Art und Weise.<br>
+</li>
+</ul></li>
+<li>Internetebene:
+<ul>
+<li><strong>Internet Protocol</strong>, <strong>IP</strong>: Verantwortlich für die Übertragung von Datenpaketen zwischen Senderhost- und Empfängerhostcomputer mithilfe von IP Adressen. Dieses protokoll ist das älteste und etabliert das Internet.</li>
+</ul></li>
+<li>Linkebene: Layer 2 Protokolle sind spezielle Protokolle, die über Verbindungen Daten austauschen. Diese Ebene wird zum Beispiel von Switchen benutzt. Das sind Datenweichen für das Internet.</li>
+</ul>
+<p>Wir haben gesagt, dass die für das WWW zuständigen Kommunikationsprotokolle wie in einer Zwiebel angeordnet sind. Dies gilt übrigens für sehr viele andere Kommunikationsprotokolle im Internet. Dieser schichtweise Aufbau spiegelt sich in der Anatomie der übertragenen Daten. Jedes Protokoll trägt das nächste Protokoll huckepack. Somit wird die Verantwortlichkeit ebenfalls geteilt.</p>
+<div id="fig-protocols" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-protocols-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row quarto-layout-valign-center">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/ip_stack_connections.png" class="img-fluid figure-img"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/udp_encapsulation.png" class="img-fluid figure-img"></p>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-protocols-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Abbildung&nbsp;3: Links: Funktionsweise des WWW über das Internet <span class="citation" data-cites="en:user:kbroseEnglishOperationInternet2008">(<a href="#ref-en:user:kbroseEnglishOperationInternet2008" role="doc-biblioref">en:User:Kbrose 2008a</a>)</span>. Ein Computer A möchte mit einem Computer B Daten innerhalb einer Anwendung austauschen. Zum Beispiel möchtest Du ein TikTok Video anschauen. Der Client A sendet an einer Bereitstellungsanwendung, die auf einem TikTok Server B läuft, eine Anfrage nach einem bestimmten Video. Das geschieht über HTTP. Die Anfrage wird auf der Transportebene in QUIC/UDP verpackt, dann auf der Internetebene in das IP Protokoll, um anschliessend auf der Linkebene von einem Layer 2 Protokoll. So wird die Anfrage auf dem Weg geschickt und über verschiedene Medien. Dazwischen liegende Knoten müssen nur bis auf die Internetebene dekodieren, damit sie die Anfrage weitersenden. Die Verschachtlung der Daten ist rechts gezeigt <span class="citation" data-cites="en:user:kbroseEnglishEncapsulationApplication2008">(<a href="#ref-en:user:kbroseEnglishEncapsulationApplication2008" role="doc-biblioref">en:User:Kbrose 2008b</a>)</span>.
+</figcaption>
+</figure>
+</div>
+<section id="dns" class="level3" data-number="5.1">
+<h3 data-number="5.1" class="anchored" data-anchor-id="dns"><span class="header-section-number">5.1</span> DNS</h3>
+<p>Das <strong>Domain Name System</strong> vergibt hierarchische Namen für Web Ressourcen. Die Hierarchie der Namen wird von rechts nach links gelesen. Der Sinn ist, dass Du im Client, zum Beispieleinem Browser, sogenannte Klarnamen verwenden kannst, statt IP Adressen.</p>
+<p>Der Name <code>www.beispiel.com</code> hat somit drei Ebenen, die durch einen <code>.</code> getrennt sind. Die höchste Ebene ist <code>com</code>, gefolgt von <code>beispiel</code>, schliesslich gefolgt von <code>www</code>. Das Wort <code>beispiel</code> ist der sogenannte Domänenname. Wenn der Name mit einer IP Adresse verbunden wird, dann ist der Name gleichzeitig der Hostcomputername.</p>
+<p>Domänennamen werden durch Registrare in einer weltweit verteilten Datenbank eingetragen. Dieser Vorgang wird von privatwirtschaftlichen Firmen ausgeführt; somit müssen deren Dienste bezahlt werden. Das Registrieren einer Domäne kostet auch monatlichen Unterhalt im Bereich einiger bis mehrere Zehner Euro im Monat.</p>
+</section>
+</section>
+<section id="suchmaschinen" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="suchmaschinen"><span class="header-section-number">6</span> Suchmaschinen</h2>
+<p>Eine Suchmaschine liefert Hyperlinks zu relevanten Webseiten als Antwort auf eine Suchanfrage eines Clients. Dazu muss die Suchmaschine Teil eines verteilten Rechnersystems sein, damit Ergebnisse schnell und zuverlässig an jedem potenziellen Client auf der Welt ankommen. Der Marktanteil an der globalen Suche teilen sich folgende Suchmaschinen:</p>
+<ol>
+<li>Google (Alphabet Konzern): 89–90 %</li>
+<li>Bing (Microsoft Konzern): ca. 4 %</li>
+<li>Yandex (russische Firma): ca. 2.5 %</li>
+<li>Yahoo! (ehemals führend, absolut führend 1998): ca. 1.3 %</li>
+<li>DuckDuckGo (mit erhöhtem Privatsphärenschutz): ca. 0.8 %</li>
+<li>Baidu (in China hauptsächlich): ca. 0.7 %</li>
+</ol>
+<section id="beschaffung-von-daten" class="level3" data-number="6.1">
+<h3 data-number="6.1" class="anchored" data-anchor-id="beschaffung-von-daten"><span class="header-section-number">6.1</span> Beschaffung von Daten</h3>
+<p>Die Daten zur Generierung von Suchergebnissen werden von dem Suchmaschinenentwickler durch den Einsatz von Webcrawler, auch Spider oder Roboter genannt, generiert. Diese Roboter durchforsten das WWW und gehen systematisch allen Hyperlinks nach. Alle diese Daten werden gespeichert.</p>
+<p>Der nächste Schritt umfasst die Kategorisierung der Daten durch komplizierte Algorithmen. Diesen Vorgang nennen wir Indexierung. Ein weiterer Schritt verwendet die auf einer Webseite vorhandenen Hyperlinks, um eine Reihenfolge von Ergebnissen zu erzeugen. Die Reihenfolge sollte letztendlich eine Mischung aus Popularität und Relevanz der Seite darstellen.</p>
+<p>Diese Datengrundlage stellt bei vielen Unternehmen, die eine Suchmaschine betreiben oftmals eine Eintrittstor in das maschinelle Lernen dar. Eine Weiterentwicklung des maschinellen Lernens ist das, was heute als moderne künstliche Intelligenz hyped.</p>
+</section>
+<section id="erzeugung-von-suchergebnissen" class="level3" data-number="6.2">
+<h3 data-number="6.2" class="anchored" data-anchor-id="erzeugung-von-suchergebnissen"><span class="header-section-number">6.2</span> Erzeugung von Suchergebnissen</h3>
+<p>Wenn Du in irgendeiner Suchmaschine nach relevanten Informationen im WWW suchst, dann suchst Du eigentlich durch den Indexdschungel, den die Suchmaschinenentwickler angelegt haben; nicht das WWW an sich. Da die Algorithmen zur Indexierung und Relevanzfeststellung teilweise unbekannt sind, sind die Suchergebnisse von verschiedenen Suchmaschinen unterschiedlich.</p>
+<p>Die Qualität der Suchergebnisse ist höchst subjektive; das heisst, sie hängt von Seinem persönlichen Einstellungen und Erwartungen ab. Bei manchen Suchmaschinen kommt es immer häufiger vor, dass Suchergebnisse selbst bei derselben Person abweichen. Das hat Vor- und Nachteile.</p>
+<p>In den letzten Jahren haben sich zusätzliche Algorithmen verbreitet, die die Suchergebnisse von Deinem Standort, Deinem Alter, der Tageszeit, und vielen anderen Deiner persönlichen Daten abhängig machen. zusätzlich sind die Algorithmen bemüht, Dir Suchergebnisse aufgrund Deiner Suchhistorie; also Deiner Suchgeschichte und Deines Verhaltens im WWW, zu präsentieren.</p>
+</section>
+</section>
+<section id="deep-web" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="deep-web"><span class="header-section-number">7</span> Deep Web</h2>
+<p>Das Deep Web ist derjenige Teil des WWW, der nicht durch irgendeinem Webcrawler kartografiert und indiziert worden ist. Dadurch taucht dieser Teil des WWW nie in Suchergebnissen auf. Der Zugang zum Deep Web bleibt dem Webcrawler aufgrund folgender Aspekte verwehrt:</p>
+<ul>
+<li>Kontext: zum Beispiel aufgrund des geugraphischen Stanbdortes des Client</li>
+<li>Dynamischer Inhalt: dynamische Webseiten werden von Servern aufgrund einer spezifischen Anfrage hergestellt</li>
+<li>Zugangslimitierung
+<ul>
+<li>Durch <strong>Robots Exclusion Standard</strong> oder <strong>CAPTCHA</strong>s</li>
+<li>Privates Web: geschützt durch Zugangsdaten</li>
+<li>Verschlüsselter Inhalt: zugänglich nur mit Spezialsoftware</li>
+</ul></li>
+<li>Nicht-HTML/text Inhalt: Text kodiert in anderen Multimediadateien, zum Beispiel bild oder Video</li>
+<li>Gescripteter Inhalt: zum Beispiel generiert durch Javascript</li>
+<li>Inhalt ohne Aussenlinks</li>
+<li>Web Archive: Webseiten, die nicht mehr zugänglich sind, deren Inhalt jedoch ein einem Archiv gespeichert worden ist</li>
+</ul>
+</section>
+<section id="dark-web" class="level2" data-number="8">
+<h2 data-number="8" class="anchored" data-anchor-id="dark-web"><span class="header-section-number">8</span> Dark Web</h2>
+<p>Das Dark Web ist der Teil des Internets, der durch spezielle und angepasste Kommunikationsprotokolle zugänglich wird. Das Dark Web läuft auf dem Internet, spricht aber nur teilweise dieselbe Kommunikationssprache. <strong>Das Dark Web ist nicht gleich dem Deep Web</strong>.</p>
+<p>Im Dark Web können Marktplätze für illegale Güter wie Drogen und Waffen entstehen. Transaktionen werden dann meist in ungeregelten Währungen wie Bitcoin getätigt. Weiterhin gibt es Peer-to-Peer Dateiübetragungen; meist illegaler pornografischer Art. In Dark Web Foren werden extremistische meinung verbreitet.</p>
+<p>Allerdings gibt die Anonymität auch berechtigten Anwendungen einen Platz. Whistleblower können ohne Defamierung und Verfolgung sensitive Daten tauschen. Pressearbeit greift oft auf Dark Wevb Dienste zurück, um Quellen zu schützen oder einen Publikationsvorteil zu erlangen. Einige Social Media Seiten nutzen das Dark Web auch zur Datenübertragung; so können die Mitglieder vor unerlaubten Zugriff geschützt werden.</p>
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Literatur</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-en:user:kbroseEnglishOperationInternet2008" class="csl-entry" role="listitem">
+en:User:Kbrose. 2008a. <em>English: <span>Operation</span> of the <span>Internet Protocol</span> Suite between Two <span>Internet</span> Hosts Connected via Two Routers (Top) and the Corresponding Layers of the <span>IP</span> Suite in Use at Each Hop (Bottom). <span>All</span> Hosts Use the <span>Internet Layer</span> to Route Packets to next Hop Solely Based on the <span>IP</span> Address While Only the Hosts Need the Upper Layers to Send or Receive Application Data. <span>At</span> the <span>Transport Layer</span> and <span>Application Layer</span> the Hosts Can Be Said to Have Virtual Connections between Them (If Using a Connection-Oriented Transport Protocol), but with Peer-to-Peer, the Other Layers Will Only Know about the next-Hop Neighbor.</em> <a href="https://commons.wikimedia.org/wiki/File:IP_stack_connections.svg">https://commons.wikimedia.org/wiki/File:IP_stack_connections.svg</a>.
+</div>
+<div id="ref-en:user:kbroseEnglishEncapsulationApplication2008" class="csl-entry" role="listitem">
+en:User:Kbrose, en:User:Cburnett original work, colorization by. 2008b. <em>English: <span>Encapsulation</span> of Application Data Descending through the Layered <span>IP</span> Architecture</em>. <a href="https://commons.wikimedia.org/wiki/File:UDP_encapsulation.svg">https://commons.wikimedia.org/wiki/File:UDP_encapsulation.svg</a>.
+</div>
+<div id="ref-filutowskaEnglishFirstWeb2009" class="csl-entry" role="listitem">
+Filutowska, Zuzanna K. 27 May 2009, 12:56:55. <em>English: <span>First</span> Web Server Located at <span>CERN</span> Computer Center. <span>The</span> Label Says "This Machine Is a Server, Do Not Power It down".<span>Polski</span>: <span>Pierwszy</span> Serwer <span>WWW</span> Zlokalizowany w Centrum Komputerowym <span>CERN</span>. <span>Na</span> Kartce Widnieje Napis "Ta Maszyna to Serwer, Nie Wyłączać".</em> <a href="https://commons.wikimedia.org/wiki/File:First-server-cern-computer-center.jpg">https://commons.wikimedia.org/wiki/File:First-server-cern-computer-center.jpg</a>.
+</div>
+<div id="ref-ServerOperatingSystem" class="csl-entry" role="listitem">
+<span>„Server <span>Operating System Market Volume</span>, <span>Share</span> | <span>Analysis</span>, 2032“</span>. o.&nbsp;J. Zugegriffen 3. Januar 2026. <a href="https://www.fortunebusinessinsights.com/server-operating-system-market-106601">https://www.fortunebusinessinsights.com/server-operating-system-market-106601</a>.
+</div>
+<div id="ref-summitEnglish12November2024" class="csl-entry" role="listitem">
+Summit, Web. 12 November 2024, 16:48:08. <em>English: 12 <span>November</span> 2024; <span>Sir Tim Berners-Lee</span>, <span>Founder</span> of <span>World Wide Web</span>/<span>CTO</span>, <span>Inrupt</span>, on <span>Centre Stage</span> during Day One of <span>Web Summit</span> 2024 at the <span>MEO Arena</span> in <span>Lisbon</span>, <span>Portugal</span>. <span>Photo</span> by <span>Lukas Schulze</span>/<span>Web Summit</span> via <span>Sportsfile</span></em>. <a href="https://commons.wikimedia.org/wiki/File:LS3_4919_(cropped).jpg">https://commons.wikimedia.org/wiki/File:LS3_4919_(cropped).jpg</a>.
+</div>
+<div id="ref-unsplashPhotoKevinAche2023" class="csl-entry" role="listitem">
+Unsplash. 2023. <span>„Photo by <span>Kevin Ache</span> on <span>Unsplash</span>“</span>. 25. September 2023. <a href="https://unsplash.com/photos/a-rack-of-servers-in-a-server-room-2JJ3wBHu4_0">https://unsplash.com/photos/a-rack-of-servers-in-a-server-room-2JJ3wBHu4_0</a>.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Fußnoten</h2>
+
+<ol>
+<li id="fn1"><p><em>Conseil Européen pour la Recherche Nucléaire</em> ist der französische Name für eine europäische übernationale Organisation für Teilchenphysik. Sie wurde 1954 gegründet, beschäftigt etwa 2700 Personen, und empfängt mehr als 12000 Gäste jährlich. Ihre Hauptaufgabe ist die Bereitstellung von Teilchenbeschleuniger zur Erforschung der Materie, darunter des LHC oder <em>Large Hadron Collider</em>. Der LHC ist der größte Teilchenbeschleuniger der Welt und eine der größten Maschinen der Welt. Es hat einen Durchmesser von 8 km und einen Umfang von 27 km.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Die <em>Hypertext Markup Language</em> ist eine formale Programmiersprache mit deren Hilfe strukturierte Dokumente beschrieben werden. Du erfährst mehr darüber in den Lerninhalten zu HTML.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Das <em>Internet protocol</em> ist die Kommunikationsebene des Internets, die direkt über der Hardwareebene liegt. Das IP sorgt für die Verteilung der Pakete von Sender zu Empfänger.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Kopiert");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Kopiert");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<script src="index_files/libs/quarto-contrib/line-highlight-1.0.0/line-highlight.js" defer="true"></script>
+</body></html>
