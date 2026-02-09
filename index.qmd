@@ -122,7 +122,7 @@ Diese Datengrundlage stellt bei vielen Unternehmen, die eine Suchmaschine betrei
 
 Wenn Du in irgendeiner Suchmaschine nach relevanten Informationen im WWW suchst, dann suchst Du eigentlich durch den Indexdschungel, den die Suchmaschinenentwickler angelegt haben; nicht das WWW an sich. Da die Algorithmen zur Indexierung und Relevanzfeststellung teilweise unbekannt sind, sind die Suchergebnisse von verschiedenen Suchmaschinen unterschiedlich.
 
-Die Qualität der Suchergebnisse ist höchst subjektive; das heisst, sie hängt von Seinem persönlichen Einstellungen und Erwartungen ab. Bei manchen Suchmaschinen kommt es immer häufiger vor, dass Suchergebnisse selbst bei derselben Person abweichen. Das hat Vor- und Nachteile.
+Die Qualität der Suchergebnisse ist höchst subjektiv; das heisst, sie hängt von Deinem persönlichen Einstellungen und Erwartungen ab. Bei manchen Suchmaschinen kommt es immer häufiger vor, dass Suchergebnisse selbst bei derselben Person abweichen. Das hat Vor- und Nachteile.
 
 In den letzten Jahren haben sich zusätzliche Algorithmen verbreitet, die die Suchergebnisse von Deinem Standort, Deinem Alter, der Tageszeit, und vielen anderen Deiner persönlichen Daten abhängig machen. zusätzlich sind die Algorithmen bemüht, Dir Suchergebnisse aufgrund Deiner Suchhistorie; also Deiner Suchgeschichte und Deines Verhaltens im WWW, zu präsentieren.  
 
@@ -145,6 +145,6 @@ Das Deep Web ist derjenige Teil des WWW, der nicht durch irgendeinem Webcrawler 
 
 Das Dark Web ist der Teil des Internets, der durch spezielle und angepasste Kommunikationsprotokolle zugänglich wird. Das Dark Web läuft auf dem Internet, spricht aber nur teilweise dieselbe Kommunikationssprache. **Das Dark Web ist nicht gleich dem Deep Web**.
 
-Im Dark Web können Marktplätze für illegale Güter wie Drogen und Waffen entstehen. Transaktionen werden dann meist in ungeregelten Währungen wie Bitcoin getätigt. Weiterhin gibt es Peer-to-Peer Dateiübetragungen; meist illegaler pornografischer Art. In Dark Web Foren werden extremistische meinung verbreitet. 
+Im Dark Web können Marktplätze für illegale Güter wie Drogen und Waffen entstehen. Transaktionen werden dann meist in ungeregelten Währungen wie Bitcoin getätigt. Weiterhin gibt es Peer-to-Peer Datenübertragung; in vielen Fällen illegale Pornographie. In Dark Web Foren werden oft extremistische Meinung verbreitet. 
 
-Allerdings gibt die Anonymität auch berechtigten Anwendungen einen Platz. Whistleblower können ohne Defamierung und Verfolgung sensitive Daten tauschen. Pressearbeit greift oft auf Dark Wevb Dienste zurück, um Quellen zu schützen oder einen Publikationsvorteil zu erlangen. Einige Social Media Seiten nutzen das Dark Web auch zur Datenübertragung; so können die Mitglieder vor unerlaubten Zugriff geschützt werden. 
+Allerdings gibt die Anonymität auch berechtigten Anwendungen einen Platz. Whistleblower können ohne Diffamierung und Verfolgung sensitive Daten tauschen. Pressearbeit greift oft auf Dark Web Dienste zurück, um Quellen zu schützen oder einen Publikationsvorteil zu erlangen. Einige Social Media Seiten nutzen das Dark Web auch zur Datenübertragung; so können die Mitglieder vor unerlaubten Zugriff geschützt werden. 
