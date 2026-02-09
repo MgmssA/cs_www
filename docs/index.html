@@ -8,7 +8,7 @@
 
 <meta name="author" content="Călin Aurel Drăgan">
 
-<title>quarto-input86d1fb0c83191eb7</title>
+<title>quarto-input34e445606e30b36c</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -235,7 +235,7 @@ Abbildung&nbsp;1: Tim Berners-Lee, oder Sir Timothy Berners-Lee, da er 2004 gead
 </figcaption>
 </figure>
 </div>
-<p>Es ist wichtig an dieser Stelle die Begriffe <em>Internet</em> und <em>WWW</em> auseinanderzuhalten. Das Internet besteht aus Computernetzwerken, die miteinander verbunden sind. Hier geht es um Hardware, die mittels Kabel oder optischen Medien Daten austauschen. Das WWW ist die globale Menge von Information die über das Internet zugänglich gemacht und ausgetauscht werden kann.</p>
+<p>Es ist wichtig an dieser Stelle die Begriffe <em>Internet</em> und <em>WWW</em> auseinanderzuhalten. Das Internet besteht aus Computernetzwerken, die miteinander verbunden sind. Hier geht es um Hardware, die mittels Kabel oder optischen Medien Daten austauschen. Das WWW ist die globale Menge von Information und Diensten, die über das Internet zugänglich gemacht und ausgetauscht werden kann.</p>
 </section>
 <section id="web-ressourcen" class="level2" data-number="2">
 <h2 data-number="2" class="anchored" data-anchor-id="web-ressourcen"><span class="header-section-number">2</span> Web Ressourcen</h2>
@@ -257,8 +257,8 @@ Abbildung&nbsp;1: Tim Berners-Lee, oder Sir Timothy Berners-Lee, da er 2004 gead
 <li>Query (deu. Abfrage): zur Identifizierung von Ressourcen, die nicht allein durch den Pfad gefunden werden können; fängt immer mit einem <code>?</code> Zeichen an.</li>
 <li>Fragment: eine optionale Angabe einer Stelle innerhalb der Ressource. Das Fragment fängt immer mit einem <code>#</code>Zeichen an.</li>
 </ul>
-<p>Eine <strong>Uniform Ressource Locator</strong>, <strong>URL</strong>, benutzt, die eine Untermenge der URI Zeichenketten stellt. Eine URL hat die Aufgabe eine Ressource zu identifizieren. Dabei ist die URL eine URI, die die Ressource durch die Art des Zugangs zu der Ressource. Eine URL brauchst einen Host, einen Pfad, und, optional, Benutzerinformationen oder</p>
-<p>Eine <strong>Uniform Ressource Name</strong>, <strong>URN</strong>, ist eine URI, die eine Ressource benennt. Dabei sagt die URN nichts über den Ort oder die Zugangsart der Ressource aus. Das heisst, eine URN enthält keinen Pfad und keine Query.</p>
+<p>Eine <strong>Uniform Ressource Locator</strong>, <strong>URL</strong>, stellt eine Untermenge der URI Zeichenketten dar. Eine URL hat die Aufgabe eine Ressource zu identifizieren. Dabei ist die URL eine URI, die die Ressource durch die Art des Zugangs zu der Ressource identifiziert. Eine URL brauchst einen Host, einen Pfad, und, optional, Benutzerinformationen oder</p>
+<p>Eine <strong>Uniform Ressource Name</strong>, <strong>URN</strong>, ist eine URI, die eine Ressource benennt aber nichts über den Ort oder die Zugangsart der Ressource aus. Das heisst, eine URN enthält keinen Pfad und keine Query.</p>
 </section>
 <section id="client-server-architektur" class="level2" data-number="4">
 <h2 data-number="4" class="anchored" data-anchor-id="client-server-architektur"><span class="header-section-number">4</span> Client-Server Architektur</h2>
@@ -294,24 +294,27 @@ Abbildung&nbsp;2: Links: Der erste Server der Welt der von Tim Berners-Lee am CE
 <h2 data-number="5" class="anchored" data-anchor-id="kommunikation-im-www"><span class="header-section-number">5</span> Kommunikation im WWW</h2>
 <p>Die Kommunikation im WWW erfolgt über das Internet. Dabei werden eine Reihe von Technologie benutzt, deren Bedeutung Du wissen solltest. Das Kommunikationsmodell im vernetzten Computersystemen entspricht einer Zwiebel. An der Oberfläche befinden sich die Anwendungsprotokolle und mit jeder Schicht nach Innen näherst Du Dich der eigentlichen Technik, die das Internet möglich macht. Wir fangen nun an der Oberfläche an und arbeiten uns nach innen.</p>
 <ul>
-<li>Anwendungsebene:
+<li>Anwendungsebene: Webinhalte
 <ul>
 <li><strong>Hypertext Transfer Protocol</strong>, <strong>HTTP</strong>: Dieses Protokoll und seine verschlüsselte Variante <strong>HTTPS</strong> sind die Protokolle, die das WWW ausmacht. Es ist ein Anfrage-Antwort System, das für den Betrieb in einer Client-Server Architektur gedacht ist. Hiermit werden alle Webseiten übertragen.</li>
 <li><strong>Domain Name System</strong>, <strong>DNS</strong>: Dies ist ein Dienst, der im Netzwerken verschiedene Bereiche, Computer, und Ressourcen identifiziert. Durch DNS kannst Du zum Beispiel Klarnamen statt IP Adressen verwenden.</li>
 </ul></li>
-<li>Transportebene:
+<li>Transportebene: End-zu-End Transport
 <ul>
 <li><strong>Transmission Control Protocol</strong>, <strong>TCP</strong>: Überträgt einen geordneten, fehlergeprüften Strom von Bytes durch eine Verbindung. Eine Verbindung wird zwischen einem Sender und einem Empfänger etabliert.<br>
 </li>
 <li><strong>User Datagram Protocol</strong>, <strong>UDP</strong>: Überträgt fehlergeprüfte Datenpakete, allerdings in einer verbindungslosen Weise in einem Netzwerk hinein. Das heisst, es gibt keine Garantie, dass Pakete ankommen oder empfangen werden aber es muss auch keine Verbindung zwischen Sender und Empfänger erfolgen.</li>
-<li><strong>QUIC</strong>: Übeträgt Daten mithilfe des UDP Protokolls aber im Unterschied zu TCP auf eine Multiplex Art und Weise.<br>
+<li><strong>QUIC</strong>: Übeträgt Daten mithilfe des UDP Protokolls aber im Unterschied zu TCP mithilfe von Multiplexing ohne globales Head-of-Line-Blocking; Verschlüsselung integriert<br>
 </li>
 </ul></li>
-<li>Internetebene:
+<li>Internetebene: Adressierung und Routing
 <ul>
 <li><strong>Internet Protocol</strong>, <strong>IP</strong>: Verantwortlich für die Übertragung von Datenpaketen zwischen Senderhost- und Empfängerhostcomputer mithilfe von IP Adressen. Dieses protokoll ist das älteste und etabliert das Internet.</li>
 </ul></li>
-<li>Linkebene: Layer 2 Protokolle sind spezielle Protokolle, die über Verbindungen Daten austauschen. Diese Ebene wird zum Beispiel von Switchen benutzt. Das sind Datenweichen für das Internet.</li>
+<li>Linkebene: lokale Übertragung
+<ul>
+<li>Layer 2 Protokolle sind spezielle Protokolle, die über Verbindungen Daten austauschen. Diese Ebene wird zum Beispiel von Switchen benutzt. Das sind Datenweichen für das Internet.</li>
+</ul></li>
 </ul>
 <p>Wir haben gesagt, dass die für das WWW zuständigen Kommunikationsprotokolle wie in einer Zwiebel angeordnet sind. Dies gilt übrigens für sehr viele andere Kommunikationsprotokolle im Internet. Dieser schichtweise Aufbau spiegelt sich in der Anatomie der übertragenen Daten. Jedes Protokoll trägt das nächste Protokoll huckepack. Somit wird die Verantwortlichkeit ebenfalls geteilt.</p>
 <div id="fig-protocols" class="quarto-layout-panel">

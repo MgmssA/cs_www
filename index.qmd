@@ -17,7 +17,7 @@ Der Physiker Tim Berners Lee erfand im Jahr 1989 am CERN[^1] eine formale Progra
 Tim Berners-Lee, oder Sir Timothy Berners-Lee, da er 2004 geadelt wurde, \* 1955, ist ein englischer Physiker, der 1989 das Internet mit Hypertext verband und somit das World Wide Web erfand [@summitEnglish12November2024].
 :::
 
-Es ist wichtig an dieser Stelle die Begriffe *Internet* und *WWW* auseinanderzuhalten. Das Internet besteht aus Computernetzwerken, die miteinander verbunden sind. Hier geht es um Hardware, die mittels Kabel oder optischen Medien Daten austauschen. Das WWW ist die globale Menge von Information die über das Internet zugänglich gemacht und ausgetauscht werden kann.
+Es ist wichtig an dieser Stelle die Begriffe *Internet* und *WWW* auseinanderzuhalten. Das Internet besteht aus Computernetzwerken, die miteinander verbunden sind. Hier geht es um Hardware, die mittels Kabel oder optischen Medien Daten austauschen. Das WWW ist die globale Menge von Information und Diensten, die über das Internet zugänglich gemacht und ausgetauscht werden kann.
 
 ## Web Ressourcen
 
@@ -40,9 +40,9 @@ Alle Web Ressourcen werden durch einen Webserver im WWW zur Verfügung gestellt.
 
 [^3]: Das *Internet protocol* ist die Kommunikationsebene des Internets, die direkt über der Hardwareebene liegt. Das IP sorgt für die Verteilung der Pakete von Sender zu Empfänger.
 
-Eine **Uniform Ressource Locator**, **URL**, benutzt, die eine Untermenge der URI Zeichenketten stellt. Eine URL hat die Aufgabe eine Ressource zu identifizieren. Dabei ist die URL eine URI, die die Ressource durch die Art des Zugangs zu der Ressource. Eine URL brauchst einen Host, einen Pfad, und, optional, Benutzerinformationen oder
+Eine **Uniform Ressource Locator**, **URL**, stellt eine Untermenge der URI Zeichenketten dar. Eine URL hat die Aufgabe eine Ressource zu identifizieren. Dabei ist die URL eine URI, die die Ressource durch die Art des Zugangs zu der Ressource identifiziert. Eine URL brauchst einen Host, einen Pfad, und, optional, Benutzerinformationen oder
 
-Eine **Uniform Ressource Name**, **URN**, ist eine URI, die eine Ressource benennt. Dabei sagt die URN nichts über den Ort oder die Zugangsart der Ressource aus. Das heisst, eine URN enthält keinen Pfad und keine Query.
+Eine **Uniform Ressource Name**, **URN**, ist eine URI, die eine Ressource benennt aber nichts über den Ort oder die Zugangsart der Ressource aus. Das heisst, eine URN enthält keinen Pfad und keine Query.
 
 ## Client-Server Architektur
 
@@ -70,16 +70,17 @@ Der heutige Trend umfasst die sogenannte Virtualisierung von Servern. Ein Bereic
 
 Die Kommunikation im WWW erfolgt über das Internet. Dabei werden eine Reihe von Technologie benutzt, deren Bedeutung Du wissen solltest. Das Kommunikationsmodell im vernetzten Computersystemen entspricht einer Zwiebel. An der Oberfläche befinden sich die Anwendungsprotokolle und mit jeder Schicht nach Innen näherst Du Dich der eigentlichen Technik, die das Internet möglich macht. Wir fangen nun an der Oberfläche an und arbeiten uns nach innen. 
 
-- Anwendungsebene:
+- Anwendungsebene: Webinhalte
     + **Hypertext Transfer Protocol**, **HTTP**: Dieses Protokoll und seine verschlüsselte Variante **HTTPS** sind die Protokolle, die das WWW ausmacht. Es ist ein Anfrage-Antwort System, das für den Betrieb in einer Client-Server Architektur gedacht ist. Hiermit werden alle Webseiten übertragen.
     + **Domain Name System**, **DNS**: Dies ist ein Dienst, der im Netzwerken verschiedene Bereiche, Computer, und Ressourcen identifiziert. Durch DNS kannst Du zum Beispiel Klarnamen statt IP Adressen verwenden. 
-- Transportebene: 
+- Transportebene: End-zu-End Transport
     + **Transmission Control Protocol**, **TCP**: Überträgt einen geordneten, fehlergeprüften Strom von Bytes durch eine Verbindung. Eine Verbindung wird zwischen einem Sender und einem Empfänger etabliert.  
     + **User Datagram Protocol**, **UDP**: Überträgt fehlergeprüfte Datenpakete, allerdings in einer verbindungslosen Weise in einem Netzwerk hinein. Das heisst, es gibt keine Garantie, dass Pakete ankommen oder empfangen werden aber es muss auch keine Verbindung zwischen Sender und Empfänger erfolgen.
-    + **QUIC**: Übeträgt Daten mithilfe des UDP Protokolls aber im Unterschied zu TCP auf eine Multiplex Art und Weise.  
-- Internetebene: 
+    + **QUIC**: Übeträgt Daten mithilfe des UDP Protokolls aber im Unterschied zu TCP mithilfe von Multiplexing ohne globales Head-of-Line-Blocking; Verschlüsselung integriert  
+- Internetebene: Adressierung und Routing
     + **Internet Protocol**, **IP**: Verantwortlich für die Übertragung von Datenpaketen zwischen Senderhost- und Empfängerhostcomputer mithilfe von IP Adressen. Dieses protokoll ist das älteste und etabliert das Internet.
-- Linkebene: Layer 2 Protokolle sind spezielle Protokolle, die über Verbindungen Daten austauschen. Diese Ebene wird zum Beispiel von Switchen benutzt. Das sind Datenweichen für das Internet.
+- Linkebene: lokale Übertragung
+    + Layer 2 Protokolle sind spezielle Protokolle, die über Verbindungen Daten austauschen. Diese Ebene wird zum Beispiel von Switchen benutzt. Das sind Datenweichen für das Internet.
 
 Wir haben gesagt, dass die für das WWW zuständigen Kommunikationsprotokolle wie in einer Zwiebel angeordnet sind. Dies gilt übrigens für sehr viele andere Kommunikationsprotokolle im Internet. Dieser schichtweise Aufbau spiegelt sich in der Anatomie der übertragenen Daten. Jedes Protokoll trägt das nächste Protokoll huckepack. Somit wird die Verantwortlichkeit ebenfalls geteilt.
 
