@@ -117,7 +117,7 @@ Die Daten zur Generierung von Suchergebnissen werden von dem Suchmaschinenentwic
 
 Der nächste Schritt umfasst die Kategorisierung der Daten durch komplizierte Algorithmen. Diesen Vorgang nennen wir Indexierung. Ein weiterer Schritt verwendet die auf einer Webseite vorhandenen Hyperlinks, um eine Reihenfolge von Ergebnissen zu erzeugen. Die Reihenfolge sollte letztendlich eine Mischung aus Popularität und Relevanz der Seite darstellen.
 
-Diese Datengrundlage stellt bei vielen Unternehmen, die eine Suchmaschine betreiben oftmals eine Eintrittstor in das maschinelle Lernen dar. Eine Weiterentwicklung des maschinellen Lernens ist das, was heute als moderne künstliche Intelligenz hyped.
+Diese Datengrundlage stellt bei vielen Unternehmen, die eine Suchmaschine betreiben, oftmals ein Eintrittstor in das maschinelle Lernen dar. Eine Weiterentwicklung des maschinellen Lernens ist das, was heute als moderne künstliche Intelligenz hyped.
 
 ### Erzeugung von Suchergebnissen
 
@@ -131,21 +131,27 @@ In den letzten Jahren haben sich zusätzliche Algorithmen verbreitet, die die Su
 
 Das Deep Web ist derjenige Teil des WWW, der nicht durch irgendeinem Webcrawler kartografiert und indiziert worden ist. Dadurch taucht dieser Teil des WWW nie in Suchergebnissen auf. Der Zugang zum Deep Web bleibt dem Webcrawler aufgrund folgender Aspekte verwehrt:
 
-- Kontext: zum Beispiel aufgrund des geugraphischen Stanbdortes des Client
+- Kontext: zum Beispiel aufgrund des geographischen Standortes des Client; in China und Russland werden viele Webseiten durch die Zensur geblockt
 - Dynamischer Inhalt: dynamische Webseiten werden von Servern aufgrund einer spezifischen Anfrage hergestellt
 - Zugangslimitierung
     + Durch **Robots Exclusion Standard** oder **CAPTCHA**s
     + Privates Web: geschützt durch Zugangsdaten
     + Verschlüsselter Inhalt: zugänglich nur mit Spezialsoftware
-- Nicht-HTML/text Inhalt: Text kodiert in anderen Multimediadateien, zum Beispiel bild oder Video
+- Nicht-HTML/text Inhalt: Text kodiert in anderen Multimediadateien, zum Beispiel Bild oder Video
 - Gescripteter Inhalt: zum Beispiel generiert durch Javascript
 - Inhalt ohne Aussenlinks
 - Web Archive: Webseiten, die nicht mehr zugänglich sind, deren Inhalt jedoch ein einem Archiv gespeichert worden ist
+
+Zu diesen WWW Bereichen kann Zugang durch direkte Eingabe von IP Adressen oder URLs erfolgen, Registrierung und Login Authentifizierung oder . Geographisch bedingte Sperren können durch VPN umgangen werden. Oft jedoch können diese Inhalte gar nicht erreicht werden.
+
+Beispiele für Deep Web Anwendungen: Web Email, Online Banking, Cloud Speicher wie Microsofts OneDrive oder Apples iCloud, Social-media Seiten und Profile, Webforen mit Registrierung. Daneben zählen Paywall Dienste wie Online Zeitungen und Zeitschriften als auch Musik und Video Streaming Dienste dazu.
 
 ## Dark Web
 
 Das Dark Web ist der Teil des Internets, der durch spezielle und angepasste Kommunikationsprotokolle zugänglich wird. Das Dark Web läuft auf dem Internet, spricht aber nur teilweise dieselbe Kommunikationssprache. **Das Dark Web ist nicht gleich dem Deep Web**.
 
-Im Dark Web können Marktplätze für illegale Güter wie Drogen und Waffen entstehen. Transaktionen werden dann meist in ungeregelten Währungen wie Bitcoin getätigt. Weiterhin gibt es Peer-to-Peer Datenübertragung; in vielen Fällen illegale Pornographie. In Dark Web Foren werden oft extremistische Meinung verbreitet. 
+Im Dark Web können Marktplätze für illegale Güter wie Drogen und Waffen entstehen. Transaktionen werden dann meist in ungeregelten Währungen wie Bitcoin getätigt. Weiterhin gibt es Peer-to-Peer Datenübertragung; in vielen Fällen illegale Pornographie. In Dark Web Foren werden oft extremistische Meinung verbreitet und der Terrorismus kann sich organisieren. Schliesslich kann durch im Dark Web erlangte Software beträchtlicher finanzieller Schaden durch Erpressung, Löschung oder Weitergabe von Daten entstehen. 
 
-Allerdings gibt die Anonymität auch berechtigten Anwendungen einen Platz. Whistleblower können ohne Diffamierung und Verfolgung sensitive Daten tauschen. Pressearbeit greift oft auf Dark Web Dienste zurück, um Quellen zu schützen oder einen Publikationsvorteil zu erlangen. Einige Social Media Seiten nutzen das Dark Web auch zur Datenübertragung; so können die Mitglieder vor unerlaubten Zugriff geschützt werden. 
+Allerdings gibt die Anonymität auch berechtigten Anwendungen einen Platz. Whistleblower können ohne Diffamierung und Verfolgung sensitive Daten tauschen. Pressearbeit greift oft auf Dark Web Dienste zurück, um Quellen zu schützen oder einen Publikationsvorteil zu erlangen. Einige Social Media Seiten nutzen das Dark Web auch zur Datenübertragung; so können die Mitglieder vor unerlaubten Zugriff geschützt werden.
+
+Um das Dark Web sicherer zu machen, wären entsprechend angepasste rechtliche Rahmenbedingungen notwendig. Zum Beispiel der Zwang, Kommunikationsprotokolle bei der Übertragung von Daten offen zu legen. Verstärkte Überwachung durch grössere Cybersicherheit Abteilungen; zum Beispiel bei Interpol. Weiterhin wären individuelle technische Schutzmaßnahmen wie Schadsoftware Erkennung und Löschung auf dem das Dark Web besuchenden Rechners notwendig. Schliesslich die Aufklärung über einen verantwortungsvollen Umgang mit dem Dark Web.
